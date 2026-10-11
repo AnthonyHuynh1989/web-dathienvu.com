@@ -238,8 +238,8 @@ h3{font-size:1.2rem;font-weight:700}
 .toggle button{border:0;background:none;padding:10px 20px;border-radius:9px;font-weight:600;color:var(--text);cursor:pointer;font-family:inherit}
 .toggle button.on{background:var(--card);color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.08)}
 .price{display:flex;flex-direction:column}
-.price .amt{font-size:2.4rem;white-space:nowrap;font-weight:800;color:var(--ink);margin:18px 0 4px;letter-spacing:-.03em}
-.price .amt small{font-size:1rem;color:var(--muted);font-weight:500}
+.price .amt{font-size:2.3rem;white-space:nowrap;font-weight:800;color:var(--ink);margin:18px 0 4px;letter-spacing:.02em;word-spacing:.08em}
+.price .amt small{font-size:1rem;color:var(--muted);font-weight:500;letter-spacing:0;margin-left:6px}
 .price .checks{margin:24px 0 30px;flex:1}
 .price.featured{background:linear-gradient(160deg,#059669,#0D9488);border-color:transparent;color:#D1FAE5;transform:scale(1.03)}
 .price.featured h3,.price.featured .amt{color:#fff}
@@ -337,9 +337,7 @@ body{position:relative;overflow-x:hidden}
 .logo{gap:10px}
 .logo img{width:42px;height:42px;flex:none;transition:transform .4s}
 .logo:hover img{transform:rotate(-8deg) scale(1.08)}
-:root[data-theme="dark"] .logo img{filter:drop-shadow(0 0 8px rgba(47,107,255,.7)) drop-shadow(0 0 2px rgba(255,255,255,.35))}
 .wordmark{font-family:'Montserrat','Inter',sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:.02em;color:var(--ink);white-space:nowrap}
-:root[data-theme="dark"] .wordmark{text-shadow:0 0 14px rgba(47,107,255,.45)}
 .nav-links a{position:relative;text-transform:uppercase;font-size:.82rem;font-weight:600;letter-spacing:.08em}
 .nav-cta .btn{text-transform:uppercase;font-size:.8rem;letter-spacing:.06em;padding:12px 20px}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:100%;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .3s;box-shadow:var(--glow-g)}
@@ -723,7 +721,7 @@ body{position:relative;overflow-x:hidden}
       <div class="card price reveal tilt">
         <h3>Theo module</h3>
         <p>Build từng tính năng riêng lẻ, tuỳ nhu cầu.</p>
-        <div class="amt"><small>Từ </small>3tr<small>/module</small></div>
+        <div class="amt">2 - 5tr<small>/module</small></div>
         <ul class="checks"><li>Landing page / trang bán hàng</li><li>Chatbot & Zalo OA tự động</li><li>Kết nối form → CRM / Google Sheets</li><li>Tự động hoá 1 quy trình (đơn hàng, CSKH...)</li><li>Cài đặt tracking & tài khoản quảng cáo</li></ul>
         <a href="https://zaloapp.com/qr/p/bdnfrd19r1qn" target="_blank" rel="noopener" class="btn btn-orange">Chọn module</a>
       </div>
@@ -731,7 +729,7 @@ body{position:relative;overflow-x:hidden}
         <span class="badge">Phổ biến nhất</span>
         <h3 style="margin-top:12px">Đồng hành theo tháng</h3>
         <p>Mức phí tuỳ số lượng & độ phức tạp tính năng cần build mỗi tháng.</p>
-        <div class="amt">15-35tr<small>/tháng</small></div>
+        <div class="amt">15 - 35tr<small>/tháng</small></div>
         <ul class="checks"><li>Roadmap tính năng theo mục tiêu kinh doanh</li><li>Build liên tục marketing + automation</li><li>Điều chỉnh, mở rộng tính năng linh hoạt</li><li>Hỗ trợ ưu tiên qua Zalo / Google Meet</li></ul>
         <a href="https://zaloapp.com/qr/p/bdnfrd19r1qn" target="_blank" rel="noopener" class="btn btn-green">Bắt đầu ngay</a>
       </div>
@@ -755,7 +753,7 @@ body{position:relative;overflow-x:hidden}
     </div>
     <div class="faq reveal">
       <details open><summary>Bao lâu thì tôi thấy kết quả?</summary><p>Quảng cáo thường cải thiện sau 2-4 tuần. Các quy trình tự động hoá đầu tiên có thể chạy trong 2-3 tuần. SEO cần 3-6 tháng để tăng trưởng bền vững.</p></details>
-      <details><summary>Chi phí được tính như thế nào?</summary><p>Tôi báo giá theo tính năng cần build. Việc nhỏ lẻ tính theo module, từ 3 triệu/module. Nếu cần đồng hành liên tục, gói tháng từ 15-35 triệu, nhu cầu lớn hơn sẽ báo giá theo phạm vi tính năng bạn mong muốn.</p></details>
+      <details><summary>Chi phí được tính như thế nào?</summary><p>Tôi báo giá theo tính năng cần build. Việc nhỏ lẻ tính theo module, từ 2-5 triệu/module. Nếu cần đồng hành liên tục, gói tháng từ 15-35 triệu, nhu cầu lớn hơn sẽ báo giá theo phạm vi tính năng bạn mong muốn.</p></details>
       <details><summary>Doanh nghiệp nhỏ có cần tối ưu vận hành không?</summary><p>Rất cần. Doanh nghiệp nhỏ càng tiết kiệm được thời gian thủ công thì chủ doanh nghiệp càng có thời gian tập trung bán hàng và phát triển.</p></details>
       <details><summary>Tôi có phải thay toàn bộ phần mềm đang dùng?</summary><p>Không. Tôi ưu tiên kết nối và tận dụng công cụ bạn đang có (Excel, Google Sheets, CRM, phần mềm kế toán), chỉ bổ sung khi thực sự cần.</p></details>
       <details><summary>Dữ liệu doanh nghiệp có được bảo mật?</summary><p>Có. Mọi dự án đều ký NDA, phân quyền truy cập rõ ràng và chỉ dùng nền tảng tuân thủ tiêu chuẩn bảo mật.</p></details>
