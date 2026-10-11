@@ -3,12 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DatHienVu — Digital Marketing & Tối ưu vận hành</title>
+<title>Dạ Thiên Vũ — Digital Marketing & Tối ưu vận hành</title>
 <meta name="description" content="Chuyên gia Digital Marketing và Tối ưu vận hành doanh nghiệp: chiến lược tăng trưởng, quảng cáo hiệu suất, tự động hoá quy trình, dữ liệu & AI.">
 <meta name="theme-color" content="#03050A">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta property="og:title" content="Dạ Thiên Vũ — Digital Marketing & Tối ưu vận hành">
+<meta property="og:description" content="Chuyên gia Digital Marketing và Tối ưu vận hành doanh nghiệp.">
+<meta property="og:image" content="/assets/logo-full.png">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@800&display=swap" rel="stylesheet">
 <script>
   // Apply saved theme before paint to avoid flash
   try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}
@@ -25,7 +34,7 @@
   --primary-soft:#E6F6F0;
   --primary-tint:rgba(47,107,255,.25);
   --on-primary:#FFFFFF;
-  --accent:#F59E0B;
+  --accent:#FF6A1A;
   --ink:#0A0F1C;
   --text:#4A5568;
   --muted:#8A94A6;
@@ -322,7 +331,12 @@ body{position:relative;overflow-x:hidden}
 .grad{background:var(--grad);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
 :root[data-theme="dark"] .grad{filter:drop-shadow(0 0 16px rgba(0,229,255,.35))}
 @keyframes shine{to{background-position:200% center}}
-.logo-mark{background:var(--grad-btn);background-size:200% auto;animation:shine 5s linear infinite;box-shadow:var(--glow-b)}
+.logo{gap:10px}
+.logo img{width:42px;height:42px;flex:none;transition:transform .4s}
+.logo:hover img{transform:rotate(-8deg) scale(1.08)}
+:root[data-theme="dark"] .logo img{filter:drop-shadow(0 0 8px rgba(47,107,255,.7)) drop-shadow(0 0 2px rgba(255,255,255,.35))}
+.wordmark{font-family:'Montserrat','Inter',sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:.02em;color:var(--ink);white-space:nowrap}
+:root[data-theme="dark"] .wordmark{text-shadow:0 0 14px rgba(47,107,255,.45)}
 .nav-links a{position:relative}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:100%;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .3s;box-shadow:var(--glow-g)}
 .nav-links a:hover::after{transform:scaleX(1)}
@@ -432,7 +446,7 @@ body{position:relative;overflow-x:hidden}
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="container nav-inner">
-    <a href="#" class="logo"><span class="logo-mark">DV</span>DatHienVu</a>
+    <a href="#" class="logo" aria-label="Dạ Thiên Vũ — Trang chủ"><img src="assets/logo-mark.png" alt="" width="42" height="42"><span class="wordmark">DẠ THIÊN VŨ</span></a>
     <nav class="nav-links" id="links">
       <a href="#services">Dịch vụ</a>
       <a href="#about">Giải pháp</a>
@@ -744,7 +758,7 @@ body{position:relative;overflow-x:hidden}
   <div class="container">
     <div class="foot-grid">
       <div>
-        <a href="#" class="logo"><span class="logo-mark">DV</span>DatHienVu</a>
+        <a href="#" class="logo" aria-label="Dạ Thiên Vũ — Trang chủ"><img src="assets/logo-mark.png" alt="" width="42" height="42"><span class="wordmark">DẠ THIÊN VŨ</span></a>
         <p style="margin-top:16px;max-width:320px">Chuyên gia Digital Marketing & Tối ưu vận hành — giúp doanh nghiệp Việt tăng trưởng bền vững.</p>
         <div class="social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="TikTok">♪</a></div>
       </div>
@@ -752,7 +766,7 @@ body{position:relative;overflow-x:hidden}
       <div><h4>Tài nguyên</h4><ul><li><a href="#">Blog</a></li><li><a href="#">Case study</a></li><li><a href="#">Template SOP</a></li><li><a href="#faq">FAQ</a></li></ul></div>
       <div><h4>Liên hệ</h4><ul><li>hello@dathienvu.com</li><li>TP. Hồ Chí Minh, Việt Nam</li><li><a href="#contact">Đặt lịch tư vấn</a></li></ul></div>
     </div>
-    <div class="copy"><span>© 2026 DatHienVu. All rights reserved.</span><span>Chính sách bảo mật · Điều khoản</span></div>
+    <div class="copy"><span>© 2026 Dạ Thiên Vũ. All rights reserved.</span><span>Chính sách bảo mật · Điều khoản</span></div>
   </div>
 </footer>
 
