@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dạ Thiên Vũ — Digital Marketing & Tối ưu vận hành</title>
+<title>Dạ Thiên Vũ - Digital Marketing & Tối ưu vận hành</title>
 <meta name="description" content="Chuyên gia Digital Marketing và Tối ưu vận hành doanh nghiệp: chiến lược tăng trưởng, quảng cáo hiệu suất, tự động hoá quy trình, dữ liệu & AI.">
 <meta name="theme-color" content="#03050A">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<meta property="og:title" content="Dạ Thiên Vũ — Digital Marketing & Tối ưu vận hành">
+<meta property="og:title" content="Dạ Thiên Vũ - Digital Marketing & Tối ưu vận hành">
 <meta property="og:description" content="Chuyên gia Digital Marketing và Tối ưu vận hành doanh nghiệp.">
 <meta property="og:image" content="/assets/logo-full.png">
 <meta property="og:type" content="website">
@@ -238,14 +238,13 @@ h3{font-size:1.2rem;font-weight:700}
 .toggle button{border:0;background:none;padding:10px 20px;border-radius:9px;font-weight:600;color:var(--text);cursor:pointer;font-family:inherit}
 .toggle button.on{background:var(--card);color:var(--ink);box-shadow:0 2px 8px rgba(0,0,0,.08)}
 .price{display:flex;flex-direction:column}
-.price .amt{font-size:2.6rem;font-weight:800;color:var(--ink);margin:18px 0 4px;letter-spacing:-.03em}
+.price .amt{font-size:2.4rem;white-space:nowrap;font-weight:800;color:var(--ink);margin:18px 0 4px;letter-spacing:-.03em}
 .price .amt small{font-size:1rem;color:var(--muted);font-weight:500}
 .price .checks{margin:24px 0 30px;flex:1}
 .price.featured{background:linear-gradient(160deg,#059669,#0D9488);border-color:transparent;color:#D1FAE5;transform:scale(1.03)}
 .price.featured h3,.price.featured .amt{color:#fff}
 .price.featured .amt small{color:#A7F3D0}
 .price.featured .checks li::before{background:rgba(255,255,255,.2);color:#fff}
-.price.featured .btn{background:#fff;color:#047857}
 .badge{align-self:flex-start;font-size:.72rem;font-weight:700;background:var(--accent);color:#1F1300;padding:4px 10px;border-radius:999px;text-transform:uppercase;letter-spacing:.06em}
 
 /* FAQ */
@@ -263,7 +262,6 @@ h3{font-size:1.2rem;font-weight:700}
 .cta h2{color:#fff;margin-bottom:12px}
 .cta form{display:flex;gap:10px;background:#fff;padding:8px;border-radius:14px;position:relative;z-index:1}
 .cta input{flex:1;border:0;outline:0;font:inherit;padding:0 12px;min-width:0;color:#0B1F17;background:transparent}
-.cta form .btn{background:#2F6BFF;color:#fff}
 .cta .note{font-size:.85rem;margin-top:10px;position:relative;z-index:1}
 
 /* Footer */
@@ -310,7 +308,7 @@ footer{padding:80px 0 40px;border-top:1px solid var(--line);margin-top:100px}
   .media-box{padding:20px}
   .pillar{padding:28px}
   .foot-grid{grid-template-columns:1fr}
-  .nav-cta .btn-primary{display:none}
+  .nav-cta .btn-orange{display:none}
 }
 
 /* ===== NEON & ANIMATION LAYER ===== */
@@ -326,7 +324,12 @@ body{position:relative;overflow-x:hidden}
 .cursor-glow{position:fixed;left:0;top:0;width:480px;height:480px;margin:-240px 0 0 -240px;border-radius:50%;pointer-events:none;z-index:-1;background:radial-gradient(circle,rgba(0,255,156,.10),rgba(47,107,255,.08) 40%,transparent 70%);opacity:0;transition:opacity .4s;will-change:transform}
 @media (hover:none){.cursor-glow{display:none}}
 .progress{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:var(--grad);box-shadow:var(--glow-b);z-index:100}
-:root{--grad-btn:linear-gradient(100deg,#2F6BFF,#0EA5E9 35%,#00B871 70%,#2F6BFF)}
+:root{
+  --btn-blue:linear-gradient(100deg,#2F6BFF,#1E3A8A 50%,#2F6BFF);
+  --btn-orange:linear-gradient(100deg,#FF6A1A,#C2410C 50%,#FF6A1A);
+  --btn-green:linear-gradient(100deg,#00B871,#065F46 50%,#00B871);
+  --glow-o:0 0 12px rgba(255,106,26,.55),0 0 32px rgba(255,106,26,.25);
+}
 
 .grad{background:var(--grad);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 6s linear infinite}
 :root[data-theme="dark"] .grad{filter:drop-shadow(0 0 16px rgba(0,229,255,.35))}
@@ -337,17 +340,23 @@ body{position:relative;overflow-x:hidden}
 :root[data-theme="dark"] .logo img{filter:drop-shadow(0 0 8px rgba(47,107,255,.7)) drop-shadow(0 0 2px rgba(255,255,255,.35))}
 .wordmark{font-family:'Montserrat','Inter',sans-serif;font-weight:800;font-size:1.12rem;letter-spacing:.02em;color:var(--ink);white-space:nowrap}
 :root[data-theme="dark"] .wordmark{text-shadow:0 0 14px rgba(47,107,255,.45)}
-.nav-links a{position:relative}
+.nav-links a{position:relative;text-transform:uppercase;font-size:.82rem;font-weight:600;letter-spacing:.08em}
+.nav-cta .btn{text-transform:uppercase;font-size:.8rem;letter-spacing:.06em;padding:12px 20px}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:100%;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .3s;box-shadow:var(--glow-g)}
 .nav-links a:hover::after{transform:scaleX(1)}
 .eyebrow{border:1px solid var(--primary-tint)}
 .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--primary);box-shadow:var(--glow-g);animation:pulse 1.6s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.35;transform:scale(.7)}}
 
-.btn-primary{background:var(--grad-btn);background-size:200% auto;color:#fff;box-shadow:var(--glow-b);position:relative;overflow:hidden;animation:shine 6s linear infinite}
-.btn-primary::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:sweep 3.2s ease-in-out infinite}
+.btn-primary,.btn-orange,.btn-green{background:var(--btn-blue);background-size:200% auto;color:#fff;box-shadow:var(--glow-b);position:relative;overflow:hidden;animation:shine 5s linear infinite;border:0}
+.btn-orange{background-image:var(--btn-orange);box-shadow:var(--glow-o)}
+.btn-green{background-image:var(--btn-green);box-shadow:var(--glow-g)}
+.btn-primary::after,.btn-orange::after,.btn-green::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.45),transparent);transform:skewX(-20deg);animation:sweep 3.2s ease-in-out infinite}
 @keyframes sweep{60%,100%{left:130%}}
-.btn-primary:hover{background:var(--grad-btn);background-size:200% auto;box-shadow:var(--glow-g),var(--glow-b);transform:translateY(-2px)}
+.btn-primary:hover,.btn-orange:hover,.btn-green:hover{transform:translateY(-2px);filter:brightness(1.12)}
+.btn-primary:hover{box-shadow:var(--glow-b),0 0 40px rgba(47,107,255,.4)}
+.btn-orange:hover{box-shadow:var(--glow-o),0 0 40px rgba(255,106,26,.4)}
+.btn-green:hover{box-shadow:var(--glow-g),0 0 40px rgba(0,184,113,.4)}
 :root[data-theme="dark"] .btn-ghost{background:rgba(10,16,30,.5);backdrop-filter:blur(8px)}
 .btn-ghost:hover{box-shadow:var(--glow-g)}
 
@@ -399,7 +408,7 @@ body{position:relative;overflow-x:hidden}
 .reveal.in .chat .msg:nth-child(2){animation-delay:1.2s}
 .reveal.in .chat .msg:nth-child(3){animation-delay:2.1s}
 @keyframes pop{from{opacity:0;transform:translateY(12px) scale(.95)}to{opacity:1;transform:none}}
-.msg.ai{background:var(--grad-btn);color:#fff;box-shadow:var(--glow-b)}
+.msg.ai{background:linear-gradient(135deg,#2F6BFF,#1E3A8A);color:#fff;box-shadow:var(--glow-b)}
 .flow-step{transition:.35s}
 .flow-step.active{border-color:var(--primary);box-shadow:var(--glow-g);transform:translateX(8px)}
 .flow-step.active .n{background:var(--primary);color:var(--on-primary);box-shadow:var(--glow-g)}
@@ -420,10 +429,8 @@ body{position:relative;overflow-x:hidden}
 .who i{box-shadow:0 0 16px -2px currentColor}
 
 .price.featured{background:linear-gradient(160deg,#1E3A8A,#0B1222 50%,#064E3B);color:#BFD3E6;box-shadow:0 0 50px -10px rgba(0,255,156,.45),0 0 50px -10px rgba(47,107,255,.5)}
-.price.featured .btn{background:var(--grad-btn);background-size:200% auto;color:#fff;animation:shine 5s linear infinite;box-shadow:var(--glow-g)}
 .price.featured .amt{text-shadow:0 0 18px rgba(0,229,255,.5)}
 .badge{background:#00FF9C;color:#03110A;box-shadow:0 0 16px rgba(0,255,156,.7)}
-.toggle button.on{background:var(--grad-btn);color:#fff;box-shadow:var(--glow-b)}
 
 .faq details{transition:.3s}
 .faq details[open]{border-color:var(--primary-tint);box-shadow:var(--glow-b)}
@@ -433,7 +440,6 @@ body{position:relative;overflow-x:hidden}
 .cta::after{animation:spinring 20s linear infinite}
 @keyframes spinring{to{transform:rotate(360deg)}}
 .cta form{box-shadow:0 0 30px rgba(0,229,255,.35)}
-.cta form .btn{background:#03050A;color:#00FF9C;text-shadow:0 0 10px rgba(0,255,156,.7)}
 .social a:hover{box-shadow:var(--glow-g)}
 .theme-btn:hover{box-shadow:var(--glow-g)}
 </style>
@@ -446,7 +452,7 @@ body{position:relative;overflow-x:hidden}
 <!-- NAV -->
 <header class="nav" id="nav">
   <div class="container nav-inner">
-    <a href="#" class="logo" aria-label="Dạ Thiên Vũ — Trang chủ"><img src="assets/logo-mark.png" alt="" width="42" height="42"><span class="wordmark">DẠ THIÊN VŨ</span></a>
+    <a href="#" class="logo" aria-label="Dạ Thiên Vũ - Trang chủ"><img src="assets/logo-mark.png" alt="" width="42" height="42"><span class="wordmark">DẠ THIÊN VŨ</span></a>
     <nav class="nav-links" id="links">
       <a href="#services">Dịch vụ</a>
       <a href="#about">Giải pháp</a>
@@ -460,7 +466,7 @@ body{position:relative;overflow-x:hidden}
         <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>
       </button>
       <a href="#contact" class="btn btn-ghost">Liên hệ</a>
-      <a href="#contact" class="btn btn-primary">Đặt lịch tư vấn</a>
+      <a href="#contact" class="btn btn-orange">Đặt lịch tư vấn</a>
       <button class="menu-btn" id="menuBtn" aria-label="Mở menu"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -472,10 +478,10 @@ body{position:relative;overflow-x:hidden}
     <div class="reveal">
       <span class="eyebrow">Digital Marketing × Business Operations</span>
       <h1 style="margin-top:20px">Tăng trưởng doanh thu, <span class="grad">tối ưu vận hành</span> doanh nghiệp</h1>
-      <p class="lead">Tôi giúp doanh nghiệp vừa bán được nhiều hơn với Digital Marketing hiệu suất cao, vừa vận hành gọn hơn nhờ chuẩn hoá quy trình, tự động hoá và dữ liệu — để tăng trưởng bền vững, không phải tăng người.</p>
+      <p class="lead">Tôi giúp doanh nghiệp vừa bán được nhiều hơn với Digital Marketing hiệu suất cao, vừa vận hành gọn hơn nhờ chuẩn hoá quy trình, tự động hoá và dữ liệu - để tăng trưởng bền vững, không phải tăng người.</p>
       <p class="typer">&gt; <span id="typed"></span><i class="caret"></i></p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary">Nhận audit miễn phí →</a>
+        <a href="#contact" class="btn btn-orange">Nhận audit miễn phí →</a>
         <a href="#services" class="btn btn-ghost">Xem dịch vụ</a>
       </div>
       <div class="hero-proof">
@@ -548,7 +554,7 @@ body{position:relative;overflow-x:hidden}
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></div>
         <span class="label">Marketing</span>
         <h3>Quảng cáo hiệu suất</h3>
-        <p>Facebook, Google, TikTok Ads tối ưu bằng dữ liệu — giảm CPA, tăng ROAS và scale ngân sách an toàn.</p>
+        <p>Facebook, Google, TikTok Ads tối ưu bằng dữ liệu - giảm CPA, tăng ROAS và scale ngân sách an toàn.</p>
       </div>
       <div class="card reveal tilt">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
@@ -560,13 +566,13 @@ body{position:relative;overflow-x:hidden}
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h10M4 18h6"/><circle cx="18" cy="16" r="3"/></svg></div>
         <span class="label">Vận hành</span>
         <h3>Chuẩn hoá quy trình (SOP)</h3>
-        <p>Khảo sát, vẽ lại và chuẩn hoá quy trình bán hàng, CSKH, kho vận — loại bỏ điểm nghẽn và lãng phí.</p>
+        <p>Khảo sát, vẽ lại và chuẩn hoá quy trình bán hàng, CSKH, kho vận - loại bỏ điểm nghẽn và lãng phí.</p>
       </div>
       <div class="card reveal tilt">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/></svg></div>
         <span class="label">Vận hành</span>
         <h3>Tự động hoá & AI Agent</h3>
-        <p>Kết nối CRM, Zalo OA, email, Google Sheets, n8n — tự động hoá báo cáo, chăm sóc khách và xử lý đơn.</p>
+        <p>Kết nối CRM, Zalo OA, email, Google Sheets, n8n - tự động hoá báo cáo, chăm sóc khách và xử lý đơn.</p>
       </div>
       <div class="card reveal tilt">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
@@ -619,7 +625,7 @@ body{position:relative;overflow-x:hidden}
       <div class="reveal">
         <span class="eyebrow">Tối ưu vận hành</span>
         <h2 style="margin:16px 0">Bộ máy vận hành tinh gọn, chạy 24/7</h2>
-        <p>Từ lúc khách đặt hàng đến khi giao hàng và báo cáo, mọi bước được chuẩn hoá và tự động hoá — giảm sai sót, giảm chi phí, chủ doanh nghiệp nắm số liệu mọi lúc.</p>
+        <p>Từ lúc khách đặt hàng đến khi giao hàng và báo cáo, mọi bước được chuẩn hoá và tự động hoá - giảm sai sót, giảm chi phí, chủ doanh nghiệp nắm số liệu mọi lúc.</p>
         <ul class="checks">
           <li>Tiết kiệm đến 20 giờ làm việc thủ công mỗi tuần</li>
           <li>Giảm 30% chi phí vận hành trung bình</li>
@@ -690,31 +696,31 @@ body{position:relative;overflow-x:hidden}
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">Bảng giá</span>
-      <h2>Gói dịch vụ linh hoạt cho mọi giai đoạn</h2>
-      <div class="toggle" id="billing"><button class="on" data-mode="m">Theo tháng</button><button data-mode="q">Theo quý (-15%)</button></div>
+      <h2>Chi phí linh hoạt <span class="grad">theo tính năng</span></h2>
+      <p>Báo giá dựa trên tính năng cần build - rõ ràng từng hạng mục, bạn cần gì trả nấy.</p>
     </div>
     <div class="grid-3" style="align-items:stretch">
       <div class="card price reveal tilt">
-        <h3>Marketing Growth</h3>
-        <p>Tăng trưởng khách hàng trên kênh số.</p>
-        <div class="amt" data-m="12" data-q="10.2">12tr<small>/tháng</small></div>
-        <ul class="checks"><li>Audit kênh digital</li><li>Kế hoạch content & ads</li><li>2 kênh quảng cáo</li><li>Báo cáo hàng tháng</li></ul>
-        <a href="#contact" class="btn btn-ghost">Chọn gói</a>
+        <h3>Theo module</h3>
+        <p>Build từng tính năng riêng lẻ, tuỳ nhu cầu.</p>
+        <div class="amt"><small>Từ </small>3tr<small>/module</small></div>
+        <ul class="checks"><li>Landing page / trang bán hàng</li><li>Chatbot & Zalo OA tự động</li><li>Kết nối form → CRM / Google Sheets</li><li>Tự động hoá 1 quy trình (đơn hàng, CSKH...)</li><li>Cài đặt tracking & tài khoản quảng cáo</li></ul>
+        <a href="#contact" class="btn btn-orange">Chọn module</a>
       </div>
       <div class="card price featured reveal tilt">
         <span class="badge">Phổ biến nhất</span>
-        <h3 style="margin-top:12px">Growth + Ops</h3>
-        <p>Marketing & vận hành trong một hệ thống.</p>
-        <div class="amt" data-m="28" data-q="23.8">28tr<small>/tháng</small></div>
-        <ul class="checks"><li>Mọi thứ trong Marketing Growth</li><li>Chuẩn hoá 3 quy trình cốt lõi</li><li>Automation CRM & báo cáo</li><li>Dashboard quản trị real-time</li></ul>
-        <a href="#contact" class="btn">Bắt đầu ngay</a>
+        <h3 style="margin-top:12px">Đồng hành theo tháng</h3>
+        <p>Mức phí tuỳ số lượng & độ phức tạp tính năng cần build mỗi tháng.</p>
+        <div class="amt">15-35tr<small>/tháng</small></div>
+        <ul class="checks"><li>Roadmap tính năng theo mục tiêu kinh doanh</li><li>Build liên tục marketing + automation</li><li>Điều chỉnh, mở rộng tính năng linh hoạt</li><li>Hỗ trợ ưu tiên qua Zalo / Google Meet</li></ul>
+        <a href="#contact" class="btn btn-green">Bắt đầu ngay</a>
       </div>
       <div class="card price reveal tilt">
-        <h3>Enterprise</h3>
-        <p>Chuyển đổi số toàn diện cho doanh nghiệp.</p>
-        <div class="amt">Liên hệ</div>
-        <ul class="checks"><li>Tư vấn chiến lược cấp C-level</li><li>AI Agent riêng cho doanh nghiệp</li><li>Tích hợp ERP, kế toán, kho</li><li>Đào tạo đội ngũ in-house</li></ul>
-        <a href="#contact" class="btn btn-ghost">Liên hệ tư vấn</a>
+        <h3>Theo nhu cầu</h3>
+        <p>Hệ thống lớn, nhiều tính năng theo mong muốn riêng.</p>
+        <div class="amt">35tr+<small>/tháng</small></div>
+        <ul class="checks"><li>AI Agent riêng cho doanh nghiệp</li><li>Tích hợp ERP, kế toán, kho</li><li>Nhiều quy trình liên kết với nhau</li><li>Đào tạo đội ngũ vận hành in-house</li></ul>
+        <a href="#contact" class="btn btn-primary">Liên hệ tư vấn</a>
       </div>
     </div>
   </div>
@@ -728,7 +734,8 @@ body{position:relative;overflow-x:hidden}
       <h2>Câu hỏi thường gặp</h2>
     </div>
     <div class="faq reveal">
-      <details open><summary>Bao lâu thì tôi thấy kết quả?</summary><p>Quảng cáo thường cải thiện sau 2–4 tuần. Các quy trình tự động hoá đầu tiên có thể chạy trong 2–3 tuần. SEO cần 3–6 tháng để tăng trưởng bền vững.</p></details>
+      <details open><summary>Bao lâu thì tôi thấy kết quả?</summary><p>Quảng cáo thường cải thiện sau 2-4 tuần. Các quy trình tự động hoá đầu tiên có thể chạy trong 2-3 tuần. SEO cần 3-6 tháng để tăng trưởng bền vững.</p></details>
+      <details><summary>Chi phí được tính như thế nào?</summary><p>Tôi báo giá theo tính năng cần build. Việc nhỏ lẻ tính theo module, từ 3 triệu/module. Nếu cần đồng hành liên tục, gói tháng từ 15-35 triệu, nhu cầu lớn hơn sẽ báo giá theo phạm vi tính năng bạn mong muốn.</p></details>
       <details><summary>Doanh nghiệp nhỏ có cần tối ưu vận hành không?</summary><p>Rất cần. Doanh nghiệp nhỏ càng tiết kiệm được thời gian thủ công thì chủ doanh nghiệp càng có thời gian tập trung bán hàng và phát triển.</p></details>
       <details><summary>Tôi có phải thay toàn bộ phần mềm đang dùng?</summary><p>Không. Tôi ưu tiên kết nối và tận dụng công cụ bạn đang có (Excel, Google Sheets, CRM, phần mềm kế toán), chỉ bổ sung khi thực sự cần.</p></details>
       <details><summary>Dữ liệu doanh nghiệp có được bảo mật?</summary><p>Có. Mọi dự án đều ký NDA, phân quyền truy cập rõ ràng và chỉ dùng nền tảng tuân thủ tiêu chuẩn bảo mật.</p></details>
@@ -741,12 +748,12 @@ body{position:relative;overflow-x:hidden}
   <div class="cta reveal">
     <div style="position:relative;z-index:1">
       <h2>Sẵn sàng tăng trưởng và vận hành tinh gọn?</h2>
-      <p>Đăng ký buổi audit marketing & vận hành miễn phí 30 phút — chỉ còn 5 suất trong tháng này.</p>
+      <p>Đăng ký buổi audit marketing & vận hành miễn phí 30 phút - chỉ còn 5 suất trong tháng này.</p>
     </div>
     <div>
       <form id="ctaForm">
         <input type="email" placeholder="Email của bạn" required aria-label="Email">
-        <button class="btn" type="submit">Đăng ký</button>
+        <button class="btn btn-green" type="submit">Đăng ký</button>
       </form>
       <p class="note" id="ctaNote">Không spam. Huỷ đăng ký bất cứ lúc nào.</p>
     </div>
@@ -758,8 +765,8 @@ body{position:relative;overflow-x:hidden}
   <div class="container">
     <div class="foot-grid">
       <div>
-        <a href="#" class="logo" aria-label="Dạ Thiên Vũ — Trang chủ"><img src="assets/logo-mark.png" alt="" width="42" height="42"><span class="wordmark">DẠ THIÊN VŨ</span></a>
-        <p style="margin-top:16px;max-width:320px">Chuyên gia Digital Marketing & Tối ưu vận hành — giúp doanh nghiệp Việt tăng trưởng bền vững.</p>
+        <a href="#" class="logo" aria-label="Dạ Thiên Vũ - Trang chủ"><img src="assets/logo-mark.png" alt="" width="42" height="42"><span class="wordmark">DẠ THIÊN VŨ</span></a>
+        <p style="margin-top:16px;max-width:320px">Chuyên gia Digital Marketing & Tối ưu vận hành - giúp doanh nghiệp Việt tăng trưởng bền vững.</p>
         <div class="social"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">▶</a><a href="#" aria-label="TikTok">♪</a></div>
       </div>
       <div><h4>Dịch vụ</h4><ul><li><a href="#services">Digital Marketing</a></li><li><a href="#services">Quảng cáo hiệu suất</a></li><li><a href="#services">Chuẩn hoá quy trình</a></li><li><a href="#services">Tự động hoá & Dashboard</a></li></ul></div>
@@ -798,11 +805,6 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{
   io.unobserve(e.target);
 }),{threshold:.15});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-// Pricing toggle
-document.querySelectorAll('#billing button').forEach(b=>b.onclick=()=>{
-  document.querySelectorAll('#billing button').forEach(x=>x.classList.toggle('on',x===b));
-  document.querySelectorAll('.amt[data-m]').forEach(a=>{a.innerHTML=a.dataset[b.dataset.mode]+'tr<small>/tháng</small>'});
-});
 // CTA form (demo)
 document.getElementById('ctaForm').onsubmit=e=>{e.preventDefault();document.getElementById('ctaNote').textContent='Cảm ơn bạn! Tôi sẽ liên hệ trong 24 giờ.';e.target.reset()};
 
